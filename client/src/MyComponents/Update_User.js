@@ -60,7 +60,7 @@ export default function Update_User (props)  {
   useEffect(()=>{
     if(UserId)
     {
-      Axios.post("https://carpages-canada-mongodb.onrender.com/users/getUsers",{userId:User_ID}).then((response) =>{
+      Axios.post("https://carpages-canada-mongodb-jnh0.onrender.com/users/getUsers",{userId:User_ID}).then((response) =>{
         console.log(response.data);
         setusername(response.data[0].user_name); 
         setpassword(response.data[0].user_password); 
@@ -123,7 +123,7 @@ export default function Update_User (props)  {
     formData.append('altcontact',altcontactno);
     formData.append('image', Image);
   
-     Axios.post("https://carpages-canada-mongodb.onrender.com/users/updatetuser", formData ).then ((response1) =>{
+     Axios.post("https://carpages-canada-mongodb-jnh0.onrender.com/users/updatetuser", formData ).then ((response1) =>{
         console.log(response1);
         if(response1.data.insertId)
         {
@@ -146,7 +146,7 @@ export default function Update_User (props)  {
     formData.append('contact',contactno);
     formData.append('altcontact',altcontactno);
    
-       Axios.post("https://carpages-canada-mongodb.onrender.com/users/updatetuser", formData ).then ((response1) =>{
+       Axios.post("https://carpages-canada-mongodb-jnh0.onrender.com/users/updatetuser", formData ).then ((response1) =>{
           console.log(response1);
           if(response1.data.insertId)
           {
