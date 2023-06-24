@@ -28,7 +28,7 @@ cookie:{
 
 
 app.use(cors({
-    origin:["https://carpages-canada-mongofrnt.onrender.com"],
+    origin:["https://carpages-canada.onrender.com"],
     methods:["POST","GET"],
     credentials:true,
   
@@ -36,7 +36,7 @@ app.use(cors({
  }));
 
  app.use(function (request, res, next) {
-    res.header("Access-Control-Allow-Origin","https://carpages-canada-mongofrnt.onrender.com");
+    res.header("Access-Control-Allow-Origin","https://carpages-canada.onrender.com");
   
     res.header('Access-Control-Allow-Headers', true);
     res.header('Access-Control-Allow-Credentials', true);
