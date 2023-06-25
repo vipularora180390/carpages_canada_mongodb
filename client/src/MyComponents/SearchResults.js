@@ -820,6 +820,7 @@ const Apply=()=>
       }
       else if(a<0)
       {
+        console.log("Province Working");
         Axios.post("https://carpages-canada-mongodb-jnh0.onrender.com/listings/getFilterListings",{buyfromHome:buyfromHome,province:query1,bodyStyle:bodyStyle,allmodels:allModels,allmakes:AllMakes,makename:fetchMakes1,modelname:fetchModels1,minyears:minyears,maxyears:maxyears,minprice:aa,maxprice:bb,minmileage:minmileage,maxmileage:maxmileage,
         transmission:sel,drivetrain:drivetrain,used_new:sel1,withPrices:withPrices,withPictures:withPictures}).then((res)=>{
           console.log(res.data);

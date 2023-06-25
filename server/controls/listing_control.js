@@ -490,6 +490,7 @@ const getFilterListings=async(req,res)=>
                                     }
                                      if(!province=="")
                                     {
+                                        console.log("Province"+province);
                                        conditions.province_name=province;
                                     }
                                     if(!bodyStyle=="")
