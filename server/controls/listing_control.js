@@ -360,7 +360,7 @@ const FilterByClassListings=async(req,res)=>
     }
     else
     {
-        condition={ "bodystyle": vehicleClass };
+        condition={ "bodystyle": vehicleClass};
     }
     try
     {
