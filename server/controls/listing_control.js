@@ -356,7 +356,7 @@ const FilterByClassListings=async(req,res)=>
     }
     else if(vehicleClass==="Hybrid")
     {
-        condition={"fuel_type":"Hybrid / Gas"};
+        condition={"fuel_type":{$regex : ""+vehicleClass+"",$options:'i'}};
     }
     else
     {
