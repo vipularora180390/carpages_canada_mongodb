@@ -409,7 +409,7 @@ const FetchResult=()=>
                          <img src={suv} alt="" style={{position:"absolute",top:"0",left:"0",width:"100%"}} />
                         </span>
                         <span className='v-cat-label'>
-                          SUV / Crossover
+                          SUV/Crossover
                         </span>
                       </Link>
                       <Link className='v-catg-jellybeans  city-class-make-lnk category-jellybeans align-center' target="_blank" to={{pathname:"/searchResultsClass/Pickup"}}>
