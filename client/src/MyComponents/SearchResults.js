@@ -44,7 +44,7 @@ export default function SearchResults() {
     {province_name:"Yukon"},
 
   ];
-  const BodyStyles=[{Body_Style:"Convertible"},{Body_Style:"Sedan"},{Body_Style:"Wheelchair Accessible"},{Body_Style:"Coupe"},{Body_Style:"SUV / Crossover"},{Body_Style:"Motorcycle"},{Body_Style:"Pickup Truck"},{Body_Style:"Commercial"},{Body_Style:"Minivan / Van"},{Body_Style:"Wagon"}];
+  const BodyStyles=[{Body_Style:"Convertible"},{Body_Style:"Sedan"},{Body_Style:"Hatchback"},{Body_Style:"Coupe"},{Body_Style:"SUV / Crossover"},{Body_Style:"Pickup Truck"},{Body_Style:"Minivan / Van"},{Body_Style:"Wagon"}];
 
   const [sel, setSel]= useState("Automatic");
   const [sel1, setSel1]= useState("any");
