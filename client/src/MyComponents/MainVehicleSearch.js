@@ -426,7 +426,7 @@ const FetchResult=()=>
                          <img src={wagon} alt="" style={{position:"absolute",top:"0",left:"0",width:"100%"}} />
                         </span>
                         <span className='v-cat-label'>
-                          Crossover
+                          Wagon
                         </span>
                       </Link>
                       <Link className='v-catg-jellybeans  city-class-make-lnk  city-class-make-lnk category-jellybeans align-center' target="_blank" to={{pathname:"/searchResultsClass/Van"}}>
