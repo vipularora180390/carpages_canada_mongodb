@@ -360,7 +360,7 @@ const FilterByClassListings=async(req,res)=>
     }
     else
     {
-        if(vehicleClass === "SUV / Crossover")
+        if(vehicleClass === "SUV")
         {
             condition={ "bodystyle": "SUV / Crossover"};
         }
