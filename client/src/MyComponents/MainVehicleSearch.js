@@ -51,6 +51,7 @@ export default function MainVehicleSearch() {
     {city_name:"Yukon"},
 
   ];
+  const Suv ="SUV / Crossover"
   useEffect(() => {
    
     const SearchBarLocation={SearchBarLocation:query};
@@ -403,7 +404,7 @@ const FetchResult=()=>
                           Hatch/Wagon
                         </span>
                       </Link>
-                      <Link className='v-catg-jellybeans  city-class-make-lnk category-jellybeans align-center' target="_blank" to={{pathname:"/searchResultsClass/SUV"}}>
+                      <Link className='v-catg-jellybeans  city-class-make-lnk category-jellybeans align-center' target="_blank" to={{pathname:"/searchResultsClass/"+Suv.toString()}}>
                         <span className='ve-cat-icon' style={{position:"relative"}} >
                          <img src={suv} alt="" style={{position:"absolute",top:"0",left:"0",width:"100%"}} />
                         </span>
@@ -420,7 +421,7 @@ const FetchResult=()=>
                         </span>
                       </Link>
                       
-                      <Link className='v-catg-jellybeans  city-class-make-lnk category-jellybeans align-center' target="_blank" to={{pathname:"/searchResultsClass/Crossover"}}>
+                      <Link className='v-catg-jellybeans  city-class-make-lnk category-jellybeans align-center' target="_blank" to={{pathname:"/searchResultsClass/Wagon"}}>
                         <span className='ve-cat-icon' style={{position:"relative"}} >
                          <img src={wagon} alt="" style={{position:"absolute",top:"0",left:"0",width:"100%"}} />
                         </span>
