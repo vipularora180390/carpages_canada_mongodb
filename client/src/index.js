@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
-import {  BrowserRouter as Router} from 'react-router-dom';
+import {  HashRouter as Router} from 'react-router-dom';
 import Sidebar from './MyComponents/Sidebar';
 import myStore ,{PersistStore} from './store';
 import reportWebVitals from './reportWebVitals';
