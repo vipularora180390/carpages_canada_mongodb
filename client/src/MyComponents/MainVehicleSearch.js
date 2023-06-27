@@ -401,15 +401,15 @@ const FetchResult=()=>
                          <img src={hatch} alt="" style={{position:"absolute",top:"0",left:"0",width:"100%"}} />
                         </span>
                         <span className='v-cat-label'>
-                          Hatch/Wagon
+                          Hatchback
                         </span>
                       </Link>
-                      <Link className='v-catg-jellybeans  city-class-make-lnk category-jellybeans align-center' target="_blank" to={{pathname:"/searchResultsClass/"+Suv.toString()}}>
+                      <Link className='v-catg-jellybeans  city-class-make-lnk category-jellybeans align-center' target="_blank" to={{pathname:"/searchResultsClass/SUV"}}>
                         <span className='ve-cat-icon' style={{position:"relative"}} >
                          <img src={suv} alt="" style={{position:"absolute",top:"0",left:"0",width:"100%"}} />
                         </span>
                         <span className='v-cat-label'>
-                          SUV
+                          SUV / Crossover
                         </span>
                       </Link>
                       <Link className='v-catg-jellybeans  city-class-make-lnk category-jellybeans align-center' target="_blank" to={{pathname:"/searchResultsClass/Pickup"}}>
