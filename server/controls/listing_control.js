@@ -771,7 +771,7 @@ const Native_filterListings=async(req,res)=>
           
            
            { $match:conditions },
-               {
+               /*{
                    $lookup:{
 
                        from:"listings__images",
@@ -790,7 +790,7 @@ const Native_filterListings=async(req,res)=>
                       pipeline:[ {$match:conditions1}],
                       as:"Complete"
                    }
-                },
+                },*/
                
                               
        ]);
