@@ -767,11 +767,11 @@ const Native_filterListings=async(req,res)=>
                                    console.log("conditions0...."+JSON.stringify(conditions));
                                    console.log("conditions2...."+JSON.stringify(conditions1));
                                    console.log("conditions2...."+JSON.stringify(conditions2));
-       const DATA=await Listings_Model.find(conditions
+       const DATA=await Listings_Model.aggregate([
           
            
-           //{ $match:conditions },
-               /*{
+           { $match:conditions },
+               {
                    $lookup:{
 
                        from:"listings__images",
@@ -790,10 +790,10 @@ const Native_filterListings=async(req,res)=>
                       pipeline:[ {$match:conditions1}],
                       as:"Complete"
                    }
-                },*/
+                },
                
                               
-       );
+       ]);
        console.log("my_Listing_Data"+DATA);
        let newData=[];
        if(withPictures)
