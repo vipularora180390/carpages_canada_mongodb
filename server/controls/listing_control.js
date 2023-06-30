@@ -479,7 +479,7 @@ const getFilterListings=async(req,res)=>
                                     const withPrices=req.body.withPrices;
                                     const imageName='https://firebasestorage.googleapis.com/v0/b/carpages-canada-3b271.appspot.com/o/images%2Flisting_images%2Fdefault.jfif?alt=media&token=3dbb4bb1-5ae3-4348-9d14-585943c0bff7';
                                     
-                                    console.log(JSON.stringify(req.body));
+                                   // console.log(JSON.stringify(req.body));
                                     console.log("minyears"+minyears);
                                     console.log("maxyears"+maxyears);
                                     console.log("minprice"+minprice);
@@ -585,8 +585,9 @@ const getFilterListings=async(req,res)=>
                                     {
                                        conditions.transmission={$in:["Automatic","Manual"]};
                                     }
-                                   if((!minmileage && !maxmileage && used_new ==="new") || ((!maxmileage && used_new ==="new")))
+                                   /*if((!minmileage && !maxmileage && used_new ==="new") || ((!maxmileage && used_new ==="new")))
                                     {
+                                        console.log("");
                                        conditions.mileage={$gte:parseInt(AnyMileage),$lte:parseInt(NewVehicleMileage)};
                                     }
                                     if((!minmileage && !maxmileage && used_new ==="used") || (!maxmileage && used_new ==="used"))
@@ -596,7 +597,7 @@ const getFilterListings=async(req,res)=>
                                     if( !minmileage && !maxmileage  && used_new ==="any")
                                     {
                                         conditions.mileage={$gte:AnyMileage};
-                                    }
+                                    }*/
                                     if(buyfromHome)
                                     {
                                        conditions1.buy_from_home="yes";
