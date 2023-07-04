@@ -742,10 +742,10 @@ const searchModel=(e)=>
           </div>
           <div style={{display:"flex",flexFlow:"row",width:"auto",alignItems:"center"}}>
             <div className='sr-veh-details' style={{marginLeft:"0",display:"flex",flexDirection:"column"}} >
-                  <span style={{fontWeight:"700"}}>${new Intl.NumberFormat('en-US').format(val.price)} {status==="sold"?<strong style={{color:"rgb(4, 177, 4)",fontSize:"18px",marginLeft:"10px"}}>SOLD</strong>:""}</span>
+                  <span style={{fontWeight:"700"}}>${val.price > 0? new Intl.NumberFormat('en-US').format(val.price):"Call For Price"} {status==="sold"?<strong style={{color:"rgb(4, 177, 4)",fontSize:"18px",marginLeft:"10px"}}>SOLD</strong>:""}</span>
                   
             </div>
-            <div className='sr-veh-details'>{val.mileage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} KM </div>
+            <div className='sr-veh-details'>{val.mileage > 0 ? val.mileage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","):"Call for"} KM </div>
             <div className='sr-veh-details' style={{display:"flex",flexFlow:"row",alignItems:"center"}}>
                 <div style={{border:"1px solid lightgrey",borderRadius:"4px",padding:"5px",width:"5px",height:"5px",marginRight:"8px",backgroundColor:val.exterior_color}}>
                   
