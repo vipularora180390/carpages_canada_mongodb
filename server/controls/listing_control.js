@@ -544,7 +544,7 @@ const getFilterListings=async(req,res)=>
                                      
                                        conditions.model_year={$gte:minyears,$lte:currentYear};
                                     }
-                                  if(!minprice && !maxprice )
+                                  if(!minprice && !maxprice && !withPrices)
                                     {
                                         console.log("Price 1.."+minprice+"..."+maxprice);
                                        conditions.price={$gte:MinPrice,$lte:MaxPrice};
@@ -612,7 +612,7 @@ const getFilterListings=async(req,res)=>
                                     }
                                     if(withPrices)
                                     {
-                                       conditions.price ={$exists: true,$ne:null};
+                                       conditions.price ={$gte:1};
                                     }
                                     if(!withPictures)
                                     {
