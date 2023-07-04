@@ -612,7 +612,7 @@ const getFilterListings=async(req,res)=>
                                     }
                                     if(withPrices)
                                     {
-                                       conditions.price ={$exists: true,$ne:null};
+                                       conditions.price ={$ne:null};
                                     }
                                     if(!withPictures)
                                     {
