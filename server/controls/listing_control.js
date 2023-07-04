@@ -489,6 +489,14 @@ const getFilterListings=async(req,res)=>
                                     console.log("withPictures"+withPictures);
                                     console.log("withPrices"+withPrices);
                                     console.log("currentYear"+isNaN(currentYear));
+                                    console.log("drivetrain.."+drivetrain);
+                                    console.log("bodyStyle.."+bodyStyle);
+                                    console.log("used_new.."+used_new);
+                                    console.log("province.."+province);
+                                    console.log("cityname.."+cityname);
+
+
+                                    
                                     var conditions = {};
                                     var conditions1 = {};
                                     var conditions2 = {};
