@@ -455,7 +455,7 @@ const getFilterListings=async(req,res)=>
                                     const MinPrice=0;
                                     const Maxmileage=350000;
                                     const Minmileage=0;
-                                    const AnyMileage=1;
+                                    const AnyMileage=0;
                                     const NewVehicleMileage=999;
                                     
                                     const currentYear = parseInt(todaysDate.getFullYear());
