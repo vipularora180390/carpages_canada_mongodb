@@ -64,11 +64,10 @@ const verifyJWT=(req,res,next)=>{
   }
   };
 
-           const IS_User_Authentiated = async (req,res)=>{
-           
-           
-            res.json({auth:true,message:"Congrats,You are Authenticated:"});
-         };
+           const IS_User_Authentiated = async (req,res)=>
+           {
+               res.json({auth:true,message:"Congrats,You are Authenticated:"});
+           };
 
          
            const GetSign_In = async (req,res) =>{
@@ -134,7 +133,7 @@ const verifyJWT=(req,res,next)=>{
                
                else {
                   res.json({auth:false,message:"User Doesn,t Exist"});
-                       }
+                  }
           
          }
 

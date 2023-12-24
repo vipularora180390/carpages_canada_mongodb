@@ -209,7 +209,7 @@ let safety,assistance,lighting,infotainment,connectivity,comfort,convenience,ext
   
 
 
-const [vehexterior,setvehexterior] = useState([]);
+  const [vehexterior,setvehexterior] = useState([]);
   const [vehexteriorID,setvehexteriorID] = useState("");
   const [vehexteriorChecked,setvehexteriorChecked] = useState(false);
   const [vehsecurity,setvehsecurity] = useState([]);
@@ -219,17 +219,18 @@ const [vehexterior,setvehexterior] = useState([]);
     if(vehexteriorChecked && !vehexterior.includes(vehexteriorID))
     {
       setvehexterior(vehexterior=>[...vehexterior,vehexteriorID]);
+      myDispatch(addListings({"exterior":vehexterior}));
     }
     else if(!vehexteriorChecked && vehexterior.includes(vehexteriorID))
     {
         const exterior=vehexterior.indexOf(vehexteriorID);
         vehexterior.splice(exterior,1);
-        console.log("exterior :"+exterior);
+        myDispatch(addListings({"exterior":vehexterior}));
     }
     if(vehsecurityChecked && !vehsecurity.includes(vehsecurityID))
     {
       setvehsecurity(vehsecurity=>[...vehsecurity,vehsecurityID]);
-      myDispatch(addListings({"exterior":vehexterior}));
+      myDispatch(addListings({"security":vehsecurity}));
     }
     else if(!vehsecurityChecked && vehsecurity.includes(vehsecurityID))
     {

@@ -3,7 +3,7 @@
 const initialState={
   
 };
-const setData =(state = initialState, action)=>
+const setData =(action, state = initialState)=>
 {
     switch(action.type)
     {

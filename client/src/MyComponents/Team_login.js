@@ -83,12 +83,10 @@ console.log("loginStatus..."+loginStatus);
         if(!res.auth && res.message ==="Wrong Username and Password" )
         {
              setData(true);
-           
         }
               
         else if(!res.auth && res.message === "User Doesn,t Exist")
         {
-           
            alert("User Doesn,t Exist");
         }
         else if(res.data.result.user_id !="")

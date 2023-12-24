@@ -68,6 +68,7 @@ export default function SignUp (props)  {
     const choosePic= (e) =>
     {
       console.log(e.target.files[0] +"****");
+      console.log(JSON.stringify(e.target.files[0]) +"****");
       if (e.target.files[0])
       {
         setImage(e.target.files[0]);
