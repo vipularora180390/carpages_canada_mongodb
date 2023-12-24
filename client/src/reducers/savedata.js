@@ -5,7 +5,7 @@ const initialState={
 };
 const setData =(action, state = initialState)=>
 {
-  switch(action.type)
+  switch(action)
     {
       case 'USER_INPUT':
         return {
