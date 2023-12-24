@@ -3,9 +3,9 @@
 const initialState={
   
 };
-const setData =(action, state = initialState)=>
+const setData =( state = initialState,action)=>
 {
-  switch(action)
+  switch(action.type)
     {
       case 'USER_INPUT':
         return {
